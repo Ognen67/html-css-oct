@@ -1,0 +1,28 @@
+/* 
+Selectors
+
+- Tag
+- Class
+- Id
+
+*/
+
+h1,
+h2 {
+  /* color: rgb(166, 0, 255); */
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 35; */
+  color: rgb(64, 64, 64);
+
+  /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.card {
+  background-color: rgb(217, 217, 217);
+  border: 1px solid rgba(115, 115, 115, 0.5);
+  border-radius: 16px;
+  box-shadow: 5px 5px 30px 2px darkgray;
+  padding: 16px;
+  margin: 10px;
+}
