@@ -5,6 +5,7 @@ body {
 .card {
     width: 360px;
     height: fit-content;
+    border-radius: 20px;
     /* border: 1px solid black; */
     box-shadow: 5px 10px 20px 5px lightgray;
     border-radius: 12px;
@@ -74,7 +75,6 @@ body {
 .card-footer {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .card-footer h2 {
