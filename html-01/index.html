@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 8</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-size: 40px;
+        height: 100px;
+        box-sizing: border-box;
+      }
+      .grid {
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+        height: calc(100vh - 100px);
+        box-sizing: border-box;
+        gap: 20px;
+      }
+
+      .grid-item {
+        background-color: darkslategrey;
+        border: 1px solid rgb(179, 179, 179);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+
+      .grid-item:active {
+        background-color: rgb(97, 117, 117);
+        color: white;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <input type="text">
+    </div>
+    <div class="grid">
+      <div id="grid-item-1" class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+    </div>
+  </body>
+</html>
