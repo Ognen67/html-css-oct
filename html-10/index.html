@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: lightblue;
+      border-radius: 100px;
+
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+      animation: bounce 3s ease-in-out infinite;
+
+      /* animation-name: bounce;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+        animation-direction: normal;
+        animation-fill-mode:forwards; */
+    }
+
+    .ground {
+      border-top: 2px solid green;
+      position: relative;
+      top: 50px;
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(50px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .ground-2 {
+      border-top: 2px solid green;
+    }
+
+    .rotate-me {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(blue, red);
+      border-radius: 100px;
+
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+      animation: rotate 2s ease-in-out infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translateX(0)  rotateZ(0);
+      }
+
+      100% {
+        transform: translateX(250px) rotateZ(180deg);
+      }
+    }
+
+    .move-item {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(252, 80, 80);
+      border-radius: 100px;
+
+      animation: move 4s ease-in infinite;
+
+      animation-direction: alternate;
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(150px);
+      }
+
+      50% {
+        transform: translateX(150px) translateY(150px);
+      }
+
+      75% {
+        transform: translateY(150px);
+      }
+    }
+
+    .title {
+        animation: text 2s infinite;
+    }
+
+    @keyframes text {
+        0% {
+            background: linear-gradient(blue, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transform: translateX(-500px);
+        }
+        25% {
+            background: linear-gradient(green, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.25;
+        }
+        75% {
+            background: linear-gradient(rgb(255, 136, 0), rgb(255, 0, 140));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.70;
+        }
+        100% {
+            background: linear-gradient(rgb(112, 88, 60), rgb(3, 104, 255));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 1;
+        }
+    }
+  </style>
+  <body>
+
+    <h1 class="title">Animations</h1>
+    <div class="box"></div>
+
+    <div class="ground"></div>
+
+    <p style="height: 100px"></p>
+
+    <div class="rotate-me"></div>
+    <div class="ground-2"></div>
+
+    <p style="margin: 0px"></p>
+
+    <p style="height: 100px"></p>
+
+    <div class="move-item"></div>
+  </body>
+</html>
