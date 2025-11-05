@@ -143,13 +143,14 @@ body {
 }
 
 .hero h1 {
-  transition: 500ms ease-in;
+  /* transition: color 500ms ease-in; 0.15s*/
 
+  transition: 0.3s;
   /* 
   transition-property: color;
   transition-duration: 300ms;
-  transition-timing-function: ease-in; */
-  /* transition-delay: 0.1s; 
+  transition-timing-function: ease-in; 
+  transition-delay: 0.1s; 
   */
 }
 
