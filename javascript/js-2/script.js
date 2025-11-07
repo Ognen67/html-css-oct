@@ -1,7 +1,3 @@
-let ime = "Petko";
-let vozrast = 50;
-let cena = 12500;
-
 // Check for discount
 // <18, 18<=26, 27<45, 45<62, >62
 
@@ -44,7 +40,7 @@ console.log(greet("Ognen"));
 
 console.log("-------------------");
 // camelCase
-function discountCalculation(personName, personAge, basePrice) {
+function discountCalculationLog(personName, personAge, basePrice) {
   if (personAge < 18 && personAge > 0) {
     console.log(personName + " ima " + personAge + " godini. ");
     console.log(personName + " dobiva 30% popust");
@@ -77,17 +73,109 @@ function discountCalculation(personName, personAge, basePrice) {
   }
 }
 
+// Discount percentage
+const KIDS_DISCOUNT = 40;
+const STUDENT_DISCOUNT = 30;
+const ADULT_DISCOUNT = 20;
+const PENSIONERS_DISCOUNT = 40;
+
+// TypeError: Assignment to constant variable. (ne mozeme da ja menuvame vrednosta na konstantata)
+// STUDENT_DISCOUNT = 45
+
+function discountCalculation(personAge, basePrice) {
+  let discountedPrice;
+
+  if (personAge < 18 && personAge > 0) {
+    discountedPrice = basePrice - (basePrice * KIDS_DISCOUNT) / 100;
+  } else if (personAge >= 18 && personAge <= 26) {
+    discountedPrice = basePrice - (basePrice * STUDENT_DISCOUNT) / 100;
+  } else if (personAge >= 27 && personAge <= 45) {
+    discountedPrice = basePrice - (basePrice * ADULT_DISCOUNT) / 100;
+  } else if (personAge >= 45 && personAge <= 62) {
+    discountedPrice = basePrice;
+  } else if (personAge > 62 && personAge < 120) {
+    discountedPrice = basePrice - (basePrice * PENSIONERS_DISCOUNT) / 100;
+  } else {
+    discountedPrice = null;
+  }
+
+  return discountedPrice;
+}
+
 function processCheckout(price) {
   console.log("Prodolzete so plakjanje, cenata iznesuva: " + price);
 }
 
-// const namalenaCena = discountCalculation(ime, vozrast, cena);
+// const namalenaCena = discountCalculationLog(ime, vozrast, cena);
 
 console.log("--------------------------");
 
+let ime = "Petko";
+let vozrast = 50;
+let adresa = "Dimitrie Chupovski";
+let grad = "Skopje";
+let karticka = "123123113123";
+let cena = 12500;
+
+
 let ime2 = "Ognen";
-let vozrast2 = 25;
+let vozrast2 = 16;
+let adresa2 = "Dimitrie Chupovski";
+let grad2 = "Skopje";
+let karticka2 = "19381289312";
 const cena2 = 8560;
 
-const namalenaCena = discountCalculation(ime2, vozrast2, cena2);
-processCheckout(namalenaCena);
+const namalenaCena = discountCalculation(vozrast2, cena2);
+
+if (namalenaCena !== null) {
+  processCheckout(namalenaCena);
+} else {
+  console.log("Vnesovte navalidna vrednost za vorzrast, " + vozrast2);
+}
+
+console.log("--------------------------");
+
+let petko = {
+  ime: "Petko",
+  vozrast: 50,
+  adresa: "Dimitrie Chupovski",
+  grad: "Skopje",
+  karticka: "123123113123",
+  cena: 12500,
+};
+
+console.log("--------------------------");
+
+// JSON - Javascript Object Notation
+
+let ognen = {
+  ime: "Ognen",
+  vozrast: 25,
+  adresi: {
+    domasna: "Dimitrie Chupovski",
+    rabotna: "Leninova 20",
+    backup: "Makedonska 56"
+  },
+  grad: "Skopje",
+  karticka: "19381289312",
+  cena: 8560,
+};
+
+console.log(petko);
+console.log(ognen);
+
+console.log(petko.vozrast);
+console.log(petko.karticka);
+console.log(petko["grad"]);
+
+console.log(ognen.adresi.rabotna);
+
+// array
+// let users = [petko, ognen]
+
+// console.log("--------------------------");
+// console.log(users);
+
+// 5 Funkcii (reiskoristlivi discountCalculation)
+// 5 Objekti (printanje na svojstvata na objektite)
+// Chitkanje za nizi (inicijaliziranje na niza, printanje)
