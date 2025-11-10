@@ -73,6 +73,9 @@ function discountCalculationLog(personName, personAge, basePrice) {
   }
 }
 
+let namalena = discountCalculationLog("Stanko", 36, 875);
+console.log("namalenata cena nadvor od discountCalculationLog", namalena);
+
 // Discount percentage
 const KIDS_DISCOUNT = 40;
 const STUDENT_DISCOUNT = 30;
@@ -110,14 +113,6 @@ function processCheckout(price) {
 
 console.log("--------------------------");
 
-let ime = "Petko";
-let vozrast = 50;
-let adresa = "Dimitrie Chupovski";
-let grad = "Skopje";
-let karticka = "123123113123";
-let cena = 12500;
-
-
 let ime2 = "Ognen";
 let vozrast2 = 16;
 let adresa2 = "Dimitrie Chupovski";
@@ -135,13 +130,18 @@ if (namalenaCena !== null) {
 
 console.log("--------------------------");
 
+let ime = "Petko";
+let vozrast = 50;
+let adresa = "Dimitrie Chupovski";
+let grad = "Skopje";
+let karticka = "123123113123";
+
 let petko = {
   ime: "Petko",
   vozrast: 50,
   adresa: "Dimitrie Chupovski",
   grad: "Skopje",
   karticka: "123123113123",
-  cena: 12500,
 };
 
 console.log("--------------------------");
@@ -154,7 +154,7 @@ let ognen = {
   adresi: {
     domasna: "Dimitrie Chupovski",
     rabotna: "Leninova 20",
-    backup: "Makedonska 56"
+    backup: "Makedonska 56",
   },
   grad: "Skopje",
   karticka: "19381289312",
@@ -169,6 +169,81 @@ console.log(petko.karticka);
 console.log(petko["grad"]);
 
 console.log(ognen.adresi.rabotna);
+
+console.log("---------------------------");
+
+const kniga1 = {
+  title: "The Hitchhiker's Guide to the Galaxy",
+  author: "Douglas Adams",
+  publisher: "Pan Books",
+  publication_year: 1979,
+  isbn: "978-0345391803",
+  genres: ["Science Fiction", "Comedy"],
+  pages: 193,
+  print: function() {
+    // Konkatenacija
+    console.log("Title: " + this.title + "\nAuthor: " + this.author);
+    // Interpolacija
+    console.log(`Title: ${this.title}\nAuthor: ${this.author}`);
+  }
+};
+
+const kniga2 = {
+  title: "Pride and Prejudice",
+  author: "Jane Austen",
+  publisher: "T. Egerton, Whitehall",
+  publication_year: 1813,
+  isbn: "978-0141439518",
+  genres: ["Classic", "Romance"],
+  pages: 279,
+  print: function() {
+    // console.log("Title: " + this.title + "\n" + "Author: " + this.author);
+
+    console.log(`Title: ${this.title}`);
+    console.log(`Author: ${this.author}`);
+    console.log(`This book has ${this.pages} pages`);
+  }
+};
+
+const kniga3 = {
+  title: "1984",
+  author: "George Orwell",
+  publisher: "Secker & Warburg",
+  publication_year: 1949,
+  isbn: "978-0451524935",
+  genres: ["Dystopian", "Political Fiction"],
+  pages: 328,
+  print: function() {
+    console.log(`Title: ${this.title}`);
+    console.log(`Author: ${this.author}`);
+    console.log(`This book has ${this.pages} pages`);
+  }
+};
+
+
+kniga1.print()
+kniga2.print()
+kniga3.print()
+
+let books = [kniga1, kniga2, kniga3]
+console.log(books);
+
+console.log("books index 2", books[2]);
+
+const numbers = [312, 41, 123, 763, 91]
+
+// Statically typed
+// Dynamically typed
+
+const niza = [3213, {a: 5}, "Hello", true, false]
+console.log(numbers);
+
+console.log(niza);
+
+const names = ["Marko", "Angjelo", "Teo", "Robert", "Ognen"]
+console.log(names);
+
+// console.log(kniga1);
 
 // array
 // let users = [petko, ognen]
