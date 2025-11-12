@@ -103,6 +103,9 @@ kniga4.print();
 kniga5.print();
 kniga6.print();
 
+// n = 6
+// i<=n-1
+// i<n
 //             0        1       2      3       4       5
 let books = [kniga1, kniga2, kniga3, kniga4, kniga5, kniga6];
 // console.log(books);
@@ -132,6 +135,7 @@ for (let i = 0; i < books.length; i++) {
 
 // one line function
 // const printTest = (test) => console.log(test);
+
 
 // printTest("TEST!!!")
 
@@ -325,9 +329,9 @@ const newStudent = {
 console.log(students.length);
 
 console.log("-----------------");
-students.push(newStudent)
+const newLength =students.push(newStudent)
 // console.log(students);
-console.log(students.length);
+console.log(newLength);
 
 // for (let i = 0; i < students.length; i++) {
 //   const grade = calculateMark(students[i].points);
@@ -355,7 +359,7 @@ console.log(fruits.toString());
 console.log(fruits[2]);
 // console.log(fruits.at(3));
 
-console.log(fruits.join(" -- "));
+console.log(fruits.join());
 
 
 // const poppedFruit = fruits.pop();

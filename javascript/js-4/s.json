@@ -1,0 +1,742 @@
+[
+    {
+      "id": "item-1762386197881-0ig4hfomx",
+      "size": {
+        "width": 300,
+        "height": 175
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#f59e0b",
+      "content": "collaboration mode, share with friend, work on the same board, figma style",
+      "position": {
+        "x": 466.2569692363696,
+        "y": -330.4654576231377
+      },
+      "createdAt": "2025-11-05T23:43:17.881Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762386217671-b8993283a",
+      "size": {
+        "width": 300,
+        "height": 308
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#14b8a6",
+      "content": "creating our own markup language similar to notion with extensive shortcuts for creating dynamic html element, checkboxes, images, headings, markdown is a very good alternative for this as opposed to creating our own markup language as this will appeal to developers.",
+      "position": {
+        "x": -12.75135670152608,
+        "y": -34.33589071708636
+      },
+      "createdAt": "2025-11-05T23:43:37.671Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true,
+      "stripeColor": "#06b6d4"
+    },
+    {
+      "id": "item-1762386307160-n3d5m12m4",
+      "size": {
+        "width": 300,
+        "height": 185
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#ef4444",
+      "content": "the ability to connect nodes as in this roadmap, step 1 -> 2 -> 3.\ngood for planning out features",
+      "position": {
+        "x": 362.0170065323367,
+        "y": 203.582822124065
+      },
+      "createdAt": "2025-11-05T23:45:07.160Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762386383862-lqwthqi57",
+      "size": {
+        "width": 429,
+        "height": 206
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#8b5cf6",
+      "content": "ai integration directly into the canvas that understands your ideas and the context, suggests you an idea which you can create, using just the letters 'y' and 'n' becoming the cursor for creatives.",
+      "position": {
+        "x": 365.1596532520027,
+        "y": -62.49646496552205
+      },
+      "createdAt": "2025-11-05T23:46:23.862Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true,
+      "stripeColor": "#8b5cf6"
+    },
+    {
+      "id": "item-1762405812993-wime3ykaf",
+      "size": {
+        "width": 600,
+        "height": 389
+      },
+      "tags": [
+        
+      ],
+      "type": "video",
+      "color": "#06b6d4",
+      "content": "https://www.youtube.com/watch?v=WS2Ww6zYgJw",
+      "position": {
+        "x": -711.2380379216378,
+        "y": 454.2633519925742
+      },
+      "createdAt": "2025-11-06T05:10:12.992Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762445635908-nzqt78s7j",
+      "size": {
+        "width": 1278,
+        "height": 727
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "color": "#22c55e",
+      "content": "https://www.villa-bali.com/guide/wp-content/uploads/2023/12/villa-castil-di-udara-castil-di-udara-pool-day-2-615a6eda00490.jpg",
+      "position": {
+        "x": 828.5618489856395,
+        "y": -1444.664318422877
+      },
+      "createdAt": "2025-11-06T16:13:55.908Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true,
+      "stripeColor": "#22c55e"
+    },
+    {
+      "id": "item-1762447444106-ozlpirhsb",
+      "size": {
+        "width": 300,
+        "height": 136
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "content": "implement the ai chat featuresnsnan",
+      "position": {
+        "x": 331.7021507454737,
+        "y": 455.0282927488497
+      },
+      "createdAt": "2025-11-06T16:44:04.106Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762447454615-52j9mk8pc",
+      "size": {
+        "width": 663,
+        "height": 382
+      },
+      "tags": [
+        
+      ],
+      "type": "video",
+      "color": "#6366f1",
+      "content": "https://www.youtube.com/watch?v=NuIShUTg3nI",
+      "position": {
+        "x": -733.3434814192709,
+        "y": 22.69851837723327
+      },
+      "createdAt": "2025-11-06T16:44:14.615Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#6366f1"
+    },
+    {
+      "id": "item-1762454908535-ql510pio6",
+      "size": {
+        "width": 808,
+        "height": 562
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "content": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/86000/86194-Ponta-Do-Sol.jpg",
+      "position": {
+        "x": 700.4515391234556,
+        "y": 350.2327604480188
+      },
+      "createdAt": "2025-11-06T18:48:28.535Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762478849858-0ib48vhlv",
+      "size": {
+        "width": 661,
+        "height": 418
+      },
+      "tags": [
+        
+      ],
+      "type": "video",
+      "color": "#6366f1",
+      "content": "https://www.youtube.com/watch?v=X8z7IR4aBM8e",
+      "position": {
+        "x": -735.4582306223161,
+        "y": -439.5917091382699
+      },
+      "createdAt": "2025-11-07T01:27:29.858Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#6366f1"
+    },
+    {
+      "id": "item-1762635486824-vadaze6u0",
+      "size": {
+        "width": 546,
+        "height": 383
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "color": "#6366f1",
+      "content": "https://i.redd.it/19m9inz2tbr31.jpg",
+      "position": {
+        "x": -220.8435344430476,
+        "y": -1013.102294810717
+      },
+      "createdAt": "2025-11-08T20:58:06.824Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true,
+      "stripeColor": "#a855f7"
+    },
+    {
+      "id": "item-1762638916904-0zh7icmhj",
+      "size": {
+        "width": 300,
+        "height": 167
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#3b82f6",
+      "content": "stylize the card for canvas items",
+      "position": {
+        "x": -50.38429599679134,
+        "y": 405.6348106749332
+      },
+      "createdAt": "2025-11-08T21:55:16.904Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#ef4444"
+    },
+    {
+      "id": "item-1762667778102-hnjp0dgfu",
+      "size": {
+        "width": 414,
+        "height": 105
+      },
+      "tags": [
+        
+      ],
+      "type": "title",
+      "color": "#a855f7",
+      "content": "IBIZA '99",
+      "position": {
+        "x": -799.8973760308679,
+        "y": -1082.046487851256
+      },
+      "createdAt": "2025-11-09T05:56:18.102Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#6366f1"
+    },
+    {
+      "id": "item-1762668234060-y7q5abo",
+      "size": {
+        "width": 420,
+        "height": 105
+      },
+      "tags": [
+        
+      ],
+      "type": "title",
+      "color": "#8b5cf6",
+      "content": "Nudgr 1.0 Launch",
+      "position": {
+        "x": 441.3112875215947,
+        "y": -507.0849740712097
+      },
+      "createdAt": "2025-11-09T06:03:54.060Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#8b5cf6"
+    },
+    {
+      "id": "item-1762701429529-7849nd8ir",
+      "size": {
+        "width": 300,
+        "height": 400
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#3b82f6",
+      "content": "art showcasing on nudgr, people can create their own art items using images, video, text etc..\n\npeople are limited on a certain number of canvas items, which is their entry and then we can showcase this to users allowing them to vote for the art and then coose a winner at the end of a predetermined timer",
+      "position": {
+        "x": 95.50593870894767,
+        "y": -483.7087336725286
+      },
+      "createdAt": "2025-11-09T15:17:09.529Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762701570451-v5twkmrrk",
+      "size": {
+        "width": 351,
+        "height": 179
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#ef4444",
+      "content": "import markdown notes, the samrt import will separate them into different canvas itesm based on the content, text, images, videos, titles. ",
+      "position": {
+        "x": -727.5660990794115,
+        "y": -828.1971620552322
+      },
+      "createdAt": "2025-11-09T15:19:30.451Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762709446645-g9wutff3o",
+      "size": {
+        "width": 300,
+        "height": 185
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#8b5cf6",
+      "content": "eLaunching on x on the 11.11 2025\n\ntotal followers 650 ",
+      "position": {
+        "x": 979.5749675173095,
+        "y": -494.5938679822411
+      },
+      "createdAt": "2025-11-09T17:30:46.645Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#8b5cf6"
+    },
+    {
+      "id": "item-1762713206269-4xf41qpx2",
+      "size": {
+        "width": 800,
+        "height": 567
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "content": "https://lp-cms-production.imgix.net/2021-03/Coney%20Island%20summer.jpg?auto=format,compress&q=72&fit=crop",
+      "position": {
+        "x": 1750.808079210796,
+        "y": -699.766477258027
+      },
+      "createdAt": "2025-11-09T18:33:26.269Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762714718925-eqaeyr1xm",
+      "size": {
+        "width": 800,
+        "height": 630
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "content": "https://media.timeout.com/images/103329148/750/562/image.jpg",
+      "position": {
+        "x": 1671.736835150218,
+        "y": 40.49186464300902
+      },
+      "createdAt": "2025-11-09T18:58:38.925Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762715206264-n4btrpfwx",
+      "size": {
+        "width": 300,
+        "height": 185
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#6366f1",
+      "content": "touch designer app for less technical people, \n\nlike capcut is to after effects",
+      "position": {
+        "x": 828.3212923373667,
+        "y": 129.7131641543863
+      },
+      "createdAt": "2025-11-09T19:06:46.264Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#6366f1"
+    },
+    {
+      "id": "item-1762720910848-ltngents4",
+      "size": {
+        "width": 300,
+        "height": 140
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#1f212b",
+      "content": "art showcase in nudgr\n",
+      "position": {
+        "x": 909.8977792699915,
+        "y": -44.68137527408989
+      },
+      "createdAt": "2025-11-09T20:41:50.848Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#f97316"
+    },
+    {
+      "id": "item-1762720933371-17k88p7ct",
+      "size": {
+        "width": 300,
+        "height": 140
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "content": "public idea boards where people can share ideas",
+      "position": {
+        "x": 1231.24755842047,
+        "y": 44.12380057330577
+      },
+      "createdAt": "2025-11-09T20:42:13.371Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762720950510-x0ohtmb",
+      "size": {
+        "width": 300,
+        "height": 140
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "color": "#14b8a6",
+      "content": "use nudgr as a personal portfolio",
+      "position": {
+        "x": 934.1005956957558,
+        "y": -262.3877496508296
+      },
+      "createdAt": "2025-11-09T20:42:30.509Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762824621722-4f4pkf8br",
+      "size": {
+        "width": 985,
+        "height": 561
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "color": "#ef4444",
+      "content": "https://sooribali.com/img/site_images/soori-bali-hotel-accommodations-deluxe-ocean-pool-villa.jpg",
+      "position": {
+        "x": -1122.97921986021,
+        "y": -1829.034609262924
+      },
+      "createdAt": "2025-11-11T01:30:21.722Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true
+    },
+    {
+      "id": "item-1762824748120-tnvluve",
+      "size": {
+        "width": 845,
+        "height": 534
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "color": "#ef4444",
+      "content": "https://balihoneymoon.com/assets/images/hotels/oberoi-villa-large.png",
+      "position": {
+        "x": -116.14626445023,
+        "y": -2317.974699357258
+      },
+      "createdAt": "2025-11-11T01:32:28.120Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true
+    },
+    {
+      "id": "item-1762825004192-jsmqwvtsw",
+      "size": {
+        "width": 590,
+        "height": 401
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "color": "#38bdf8",
+      "content": "https://balihoneymoon.com/assets/images/hotels/oberoi-villa-large.png",
+      "position": {
+        "x": -1579.645450293559,
+        "y": -927.8254265794043
+      },
+      "createdAt": "2025-11-11T01:36:44.192Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762825606349-dpzkzakbw",
+      "size": {
+        "width": 420,
+        "height": 285
+      },
+      "tags": [
+        
+      ],
+      "type": "title",
+      "color": "#06b6d4",
+      "content": "nudgr.paper take picture to sync to nudgr.xyz \n\n\nanalyze with ai,\ncreate dynamic cards",
+      "position": {
+        "x": -1707.192227468678,
+        "y": -1289.315357568291
+      },
+      "createdAt": "2025-11-11T01:46:46.349Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false,
+      "stripeColor": "#38bdf8"
+    },
+    {
+      "id": "item-1762826665406-s1trcvt10",
+      "size": {
+        "width": 304,
+        "height": 249
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "content": "bvvbasdj",
+      "position": {
+        "x": -52.31853757557386,
+        "y": -1755.341965809848
+      },
+      "createdAt": "2025-11-11T02:04:25.406Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762826674029-vu6fj8k",
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "content": "asdj asjdkajskd",
+      "position": {
+        "x": 356.0979840982451,
+        "y": -1735.360352000437
+      },
+      "createdAt": "2025-11-11T02:04:34.028Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762826690099-51fvig34g",
+      "size": {
+        "width": 481,
+        "height": 323
+      },
+      "tags": [
+        
+      ],
+      "type": "image",
+      "color": "#6366f1",
+      "content": "https://balihoneymoon.com/assets/images/hotels/oberoi-villa-large.png",
+      "position": {
+        "x": 19.839362652945,
+        "y": -1502.597970843285
+      },
+      "createdAt": "2025-11-11T02:04:50.099Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": true,
+      "stripeColor": "#a855f7"
+    },
+    {
+      "id": "item-1762837897419-7lfjcpnyy",
+      "size": {
+        "width": 387,
+        "height": 538
+      },
+      "tags": [
+        
+      ],
+      "type": "document",
+      "content": "{\"time\":1762900045325,\"blocks\":[{\"id\":\"Tm5AM-7tR2\",\"type\":\"paragraph\",\"data\":{\"text\":\"Hellothere\"}},{\"id\":\"XxEAf4QWJ7\",\"type\":\"paragraph\",\"data\":{\"text\":\"as\"}},{\"id\":\"jyxnyjyV0I\",\"type\":\"paragraph\",\"data\":{\"text\":\"as\"}},{\"id\":\"xcG6CWQKQR\",\"type\":\"paragraph\",\"data\":{\"text\":\"asdasdsaasdasd\"}},{\"id\":\"fc7bUoF9Vk\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"meta\":{\"counterType\":\"numeric\"},\"items\":[{\"content\":\"asd\",\"meta\":{},\"items\":[]},{\"content\":\"sad\",\"meta\":{},\"items\":[]},{\"content\":\"as\",\"meta\":{},\"items\":[]},{\"content\":\"d\",\"meta\":{},\"items\":[]},{\"content\":\"asd\",\"meta\":{},\"items\":[]},{\"content\":\" asd asd asd   ad asdasd\",\"meta\":{},\"items\":[]}]}},{\"id\":\"bqloBEnsKM\",\"type\":\"header\",\"data\":{\"text\":\"asdasdasda&nbsp; &nbsp;s\",\"level\":2}},{\"id\":\"-caYK56KnI\",\"type\":\"paragraph\",\"data\":{\"text\":\"<br>sadad\"}},{\"id\":\"f3SJRVcqJ6\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"meta\":{\"counterType\":\"numeric\"},\"items\":[{\"content\":\"asdasdasd\",\"meta\":{},\"items\":[]},{\"content\":\"asd\",\"meta\":{},\"items\":[]}]}},{\"id\":\"xTvThw-uol\",\"type\":\"paragraph\",\"data\":{\"text\":\"<br><br>\"}}],\"version\":\"2.31.0\"}",
+      "position": {
+        "x": -1322.352708756798,
+        "y": -371.1958768552448
+      },
+      "createdAt": "2025-11-11T05:11:37.419Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762897035315-9xi2bxwhf",
+      "size": {
+        "width": 420,
+        "height": 160
+      },
+      "tags": [
+        
+      ],
+      "type": "title",
+      "content": "kasdjasjkdakj",
+      "position": {
+        "x": 124.6422762918297,
+        "y": 893.9019008923051
+      },
+      "createdAt": "2025-11-11T21:37:15.315Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762897042521-c17d3eg",
+      "size": {
+        "width": 300,
+        "height": 390
+      },
+      "tags": [
+        
+      ],
+      "type": "title",
+      "content": "jkasdkjas",
+      "position": {
+        "x": 539.6479703149719,
+        "y": 987.197532175843
+      },
+      "createdAt": "2025-11-11T21:37:22.520Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762897084657-zpka38btj",
+      "size": {
+        "width": 640,
+        "height": 360
+      },
+      "tags": [
+        
+      ],
+      "type": "video",
+      "content": "https://nudgr.xyz",
+      "position": {
+        "x": 1591.69639038181,
+        "y": 965.767475261442
+      },
+      "createdAt": "2025-11-11T21:38:04.657Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762897259032-bhtbtq19u",
+      "size": {
+        "width": 400,
+        "height": 566
+      },
+      "tags": [
+        
+      ],
+      "type": "document",
+      "content": "{\"time\":1762953242268,\"blocks\":[{\"id\":\"TU1OBZGe37\",\"type\":\"quote\",\"data\":{\"text\":\"asd\",\"caption\":\"asdas\",\"alignment\":\"left\"}},{\"id\":\"A0MdTBNHqm\",\"type\":\"header\",\"data\":{\"text\":\"Hey dgdsss\",\"level\":2}},{\"id\":\"6F8ApSBO_8\",\"type\":\"paragraph\",\"data\":{\"text\":\"asd\"}},{\"id\":\"Ew5Iy6LCqK\",\"type\":\"paragraph\",\"data\":{\"text\":\"asdasd\"}},{\"id\":\"WxuNDQZMAU\",\"type\":\"list\",\"data\":{\"style\":\"checklist\",\"meta\":{},\"items\":[{\"content\":\"kafica\",\"meta\":{\"checked\":true},\"items\":[]},{\"content\":\"rucek\",\"meta\":{\"checked\":true},\"items\":[]}]}},{\"id\":\"OUK9P7kuWM\",\"type\":\"list\",\"data\":{\"style\":\"checklist\",\"meta\":{},\"items\":[{\"content\":\"sadasdas\",\"meta\":{\"checked\":false},\"items\":[]}]}},{\"id\":\"I9DelHOQ4v\",\"type\":\"header\",\"data\":{\"text\":\"hey whats up\",\"level\":2}},{\"id\":\"mAaTzWHo6K\",\"type\":\"paragraph\",\"data\":{\"text\":\"hshsajajsj\"}},{\"id\":\"sppgu1nMXE\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"meta\":{\"counterType\":\"numeric\"},\"items\":[{\"content\":\"sadasd\",\"meta\":{},\"items\":[]}]}},{\"id\":\"7EIuWOHWFb\",\"type\":\"list\",\"data\":{\"style\":\"checklist\",\"meta\":{},\"items\":[{\"content\":\"asdasdasdsad\",\"meta\":{\"checked\":false},\"items\":[]}]}},{\"id\":\"A9p9G28IoB\",\"type\":\"code\",\"data\":{\"code\":\"asd asd asdas\"}},{\"id\":\"joXNjzgqVD\",\"type\":\"paragraph\",\"data\":{\"text\":\"hey whats yp\"}},{\"id\":\"03NIFL2h_h\",\"type\":\"header\",\"data\":{\"text\":\"hejeajsjsndkekskaks\",\"level\":2}}],\"version\":\"2.31.0\"}",
+      "position": {
+        "x": -1754.190139514333,
+        "y": -368.8485947795606
+      },
+      "createdAt": "2025-11-11T21:40:59.032Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762953081511-6fsvax4dz",
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "tags": [
+        
+      ],
+      "type": "text",
+      "content": "",
+      "position": {
+        "x": -1723.895059683234,
+        "y": 520.6097929848563
+      },
+      "createdAt": "2025-11-12T13:11:21.511Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    },
+    {
+      "id": "item-1762953083101-1wjs05zjz",
+      "size": {
+        "width": 350,
+        "height": 302
+      },
+      "tags": [
+        
+      ],
+      "type": "title",
+      "content": "Titlegghhhg",
+      "position": {
+        "x": -1310.051329937761,
+        "y": 411.6964253335144
+      },
+      "createdAt": "2025-11-12T13:11:23.101Z",
+      "updatedAt": "2025-11-12T13:14:15.122Z",
+      "hideStripe": false
+    }
+  ]
