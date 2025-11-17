@@ -128,6 +128,7 @@ const items = [
     special_price_start: null,
     special_price_end: null,
     options_count: 0,
+    brand: "Acer",
     id: 743067914,
     name: 'Notebook Dell Latitude 5540 i5-1335U/16GB/512GB SSD/15.6" FHD/FRP/BacklitKB/Ubu',
     slug: "notebook-dell-latitude-5540-i51335u16gb512gb-ssd156-fhdfrpbacklitkbubu-7914",
@@ -3846,6 +3847,9 @@ const items = [
 const filteredProducts = items.filter(
   (product) => product.price.amount > 40000
 );
+
+const arrAcer = items.filter(item => item.brand === "Acer").filter().filter()
+
 console.log(filteredProducts.length);
 
 const productNames = items.map((product) => product.name);

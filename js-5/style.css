@@ -1,0 +1,28 @@
+.dark-mode {
+    background-color: #282828;
+    color: rgb(231, 231, 231);
+}
+
+.dark-toggle {
+    color: white;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.shadow {
+  /* box-shadow: 0 2px 0 5px rgb(82, 77, 77); */
+}
+
+.btn-hover {
+    cursor: pointer;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 12px;
+    transition: 0.3s;
+}
