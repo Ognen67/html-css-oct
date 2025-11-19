@@ -186,3 +186,9 @@ Array.from(contentElements).forEach((el) => console.log(el));
 
 // Input pole preku koe mozam da kreiram todo so svojstva: "title" i "completed"
 // click listener na sekoe todo, toggle completed + hover + cursor: pointer
+
+
+// Domasno
+// public api za books kako sto e json placeholder za todos
+// Динамично пополнување на табела со книги со можност за бришење на секоја книга одделно
+// sort by createdAt
