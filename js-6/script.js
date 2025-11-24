@@ -30,11 +30,17 @@ function showTodos(type) {
     const completedTodos = todos.filter((todo) => todo.completed === true);
     return renderTodos(completedTodos);
   } else if (type === "incomplete") {
-    const completedTodos = todos.filter((todo) => todo.completed === false);
-    return renderTodos(completedTodos);
+    const incompleteTodos = todos.filter((todo) => todo.completed === false);
+    return renderTodos(incompleteTodos);
   } 
 
   return renderTodos(todos);
+}
+
+function uuidv4() {
+  return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
+    (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
+  );
 }
 
 function addTodo() {
@@ -42,7 +48,7 @@ function addTodo() {
 
   const newTodoObj = {
     userId: 10,
-    id: todos.length + 1,
+    id: uuidv4(),
     title: newTodoTitle,
     completed: false
     // createdAt: 
@@ -50,7 +56,7 @@ function addTodo() {
 
   todos = [newTodoObj, ...todos]
   // todos.unshift(newTodoObj)
-
+  console.log(todos);
   renderTodos(todos)
 }
 
@@ -75,19 +81,24 @@ function renderTodos(todos) {
   todos.forEach((todo) => {
     const todoCard = document.createElement("div");
     const todoTitle = document.createElement("h2");
-    const todoComplete = document.createElement("button");
-    todoComplete.classList.add("btn-complete");
+    const todoCompleteButton = document.createElement("button");
+    todoCompleteButton.classList.add("btn-complete");
 
+    // dokolku imame pokompleksna logika za uslovno dodavanje na klasi
+    // const classesToAdd = determineClassesForTodo(todo)
+
+    // so eden uslov mozeme da koristime ternary - ternaren operator
     todoCard.classList.add(`${todo.completed === true ? "completed" : "todo"}`);
     todoTitle.classList.add(
       `${todo.completed === true ? "completed-title" : null}`
     );
 
     todoTitle.innerText = todo.title;
-    todoComplete.innerText = "complete";
+    todoCompleteButton.innerText = "complete";
 
-    todoComplete.addEventListener("click", () => {
+    todoCompleteButton.addEventListener("click", () => {
       const thisTodo = todos.find((x) => x.id === todo.id);
+      // const thisTodo = todos.filter((x) => x.id === todo.id)[0];
       thisTodo.completed = !thisTodo.completed;
       console.log(thisTodo);
 
@@ -96,7 +107,7 @@ function renderTodos(todos) {
     });
 
     todoCard.appendChild(todoTitle);
-    todoCard.appendChild(todoComplete);
+    todoCard.appendChild(todoCompleteButton);
     todoCard.classList.add("todo");
 
     todosContainer.appendChild(todoCard);

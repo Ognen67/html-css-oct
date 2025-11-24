@@ -186,3 +186,5 @@ Array.from(contentElements).forEach((el) => console.log(el));
 
 // Input pole preku koe mozam da kreiram todo so svojstva: "title" i "completed"
 // click listener na sekoe todo, toggle completed + hover + cursor: pointer
+
+
