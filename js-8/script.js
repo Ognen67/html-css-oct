@@ -1,20 +1,20 @@
 // CRUD
 // Create, Read, Update, Delete
 
+// {
+//     "blogs": "[{"id":"2f1ee875-ab1d-4cef-9064-0cf9cf3dc919","title":"My Startup Journey","content":"Learn about my startup journey","image":"https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg"},{"id":"483d0ec1-a6ed-41f6-a0d1-4f66d48d58f9","title":"My latest travels","content":"Follow me on my travels around the world","image":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQEhUQEhIVFRAVFRUVFRYVFhYRFRUYFhUYFxUVFRcYHSggGBolHRcVITEhJSkrLi4wFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICY1LS8tLy0tLS0tMC0vLS0tLS0tLS0tLS0uLS0tLS0rLS0vLS0tLS0tLS0tLS0tLS0tLf/AABEIAKUBMgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAQIDBQYAB//EAEAQAAIBAgQDBgMFBwMCBwAAAAECEQADBBIhMQVBUQYTImFxgTKRoRQjQrHwB1JiwdHh8TNywkOCFSRTY5KTsv/EABoBAAMBAQEBAAAAAAAAAAAAAAECBAMABQb/xAAwEQACAgEDAgQEBgIDAAAAAAAAAQIRAwQSITFRE0GxwSJxkeEyQoGh0fAFFRQzYf/aAAwDAQACEQMRAD8AtwKeBSgU4Cvp2z5UQCngUoFOApWwjkFTo1RKKlUVmx0wu04qww2Wqy3R+FqbIuCrFLkv8Goo8Cq3BtFWKtXl5Op6+J8Cmgcak0aWoHFXa7HdnZGqKLF2jVbcSrfE3aAuO"
+// }
+
 console.log("js");
 
-let blogs = [
-  {
-    id: uuidv4(),
-    title: "My Startup Journey",
-    content: "Learn about my startup journey",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0I2o_zW1LYPNmcn-Nhbxb19ObLb4PcYRLQ&s"
-  }
-];
+let blogs = [];
 
-let editId = null
+blogsString = localStorage.getItem("blogs");
+blogs = JSON.parse(blogsString);
 
-renderBlogsTable()
+let editId = null;
+
+renderBlogsTable();
 
 // {
 //     id: uuidv4,
@@ -40,33 +40,34 @@ document.getElementById("blogForm").addEventListener("submit", function (e) {
   const content = document.getElementById("blogContent").value;
   const image = document.getElementById("blogImage").value;
 
-  if(editId === null) {
-      const newBlog = {
-        id: uuidv4(),
-        title,
-        content,
-        image,
-      };
+  if (editId === null) {
+    const newBlog = {
+      id: uuidv4(),
+      title,
+      content,
+      image,
+    };
 
-      blogs.push(newBlog);
+    blogs.push(newBlog);
+    localStorage.setItem("blogs", JSON.stringify(blogs));
   } else {
     console.log(editId);
     // najdi go blogot
-    const blog = blogs.find(blog => blog.id === editId)
+    const blog = blogs.find((blog) => blog.id === editId);
     // update so novi vrednosti
-    blog.title = title
-    blog.content = content
-    blog.image = image
+    blog.title = title;
+    blog.content = content;
+    blog.image = image;
     // disable edit mode
-    disableEditMode()
+    disableEditMode();
     // button style
-    document.getElementById("submitBtn").innerText = "Create Blog"
-    document.getElementById("submitBtn").style.backgroundColor = "#fff"  
-
+    document.getElementById("submitBtn").innerText = "Create Blog";
+    document.getElementById("submitBtn").style.backgroundColor = "#fff";
   }
 
   // update local storage
-  clearForm()
+  updateLocalStorage();
+  clearForm();
   renderBlogsTable();
 });
 
@@ -77,10 +78,13 @@ function clearForm() {
 }
 
 function disableEditMode() {
-    editId = null
-    document.getElementById("submitBtn").innerText = "Create Blog"
-    document.getElementById("submitBtn").style.backgroundColor = "#fff"  
+  editId = null;
+  document.getElementById("submitBtn").innerText = "Create Blog";
+  document.getElementById("submitBtn").style.backgroundColor = "#fff";
+}
 
+function updateLocalStorage() {
+  localStorage.setItem("blogs", JSON.stringify(blogs));
 }
 
 function renderBlogsTable() {
@@ -106,27 +110,45 @@ function renderBlogsTable() {
 }
 
 function editBlog(id) {
-    console.log(id);
+  console.log(id);
 
-    blog = blogs.find(blog => blog.id === id)
-    console.log(blog);
-    
-    editId = id;
+  blog = blogs.find((blog) => blog.id === id);
+  console.log(blog);
+  editId = id;
 
-    document.getElementById("blogTitle").value = blog.title;
-    document.getElementById("blogContent").value = blog.content;
-    document.getElementById("blogImage").value = blog.image;
-    document.getElementById("submitBtn").innerText = "Update Blog"
-    document.getElementById("submitBtn").style.backgroundColor = "#1de402"
-    
+  document.getElementById("blogTitle").value = blog.title;
+  document.getElementById("blogContent").value = blog.content;
+  document.getElementById("blogImage").value = blog.image;
+
+  document.getElementById("submitBtn").innerText = "Update Blog";
+  document.getElementById("submitBtn").style.backgroundColor = "#1de402";
 }
 
 function deleteBlog(id) {
   blogs = blogs.filter((blog) => blog.id !== id);
   console.log("delete with id: ", id);
-  if(editId === id) {
-    disableEditMode()
+  if (editId === id) {
+    disableEditMode();
   }
   // update local storage
+  updateLocalStorage();
   renderBlogsTable();
 }
+
+// povtoruvanje i vezbanje na materijalot (so kucanje)
+// get data from data.json file
+// toggle edit mode
+// add style
+// login/register mock with isAdmin flag conditionally displaying the admin
+
+
+// public api za show/movies/books etc..
+// 
+// pages
+// shows
+// show/${id}
+// show/episodes
+// show/cast
+// search/filter
+// login-register
+// favorites

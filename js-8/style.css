@@ -12,3 +12,18 @@
 .blogImageCell {
     width: 150px;
 }
+
+#blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog {
+    width: 100%;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    background-color: darkslategray;
+    color: white;
+    border-radius: 24px;
+}
