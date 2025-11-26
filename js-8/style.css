@@ -1,0 +1,14 @@
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#blogForm {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 8px;
+}
+
+.blogImageCell {
+    width: 150px;
+}

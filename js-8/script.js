@@ -1,3 +1,6 @@
+// CRUD
+// Create, Read, Update, Delete
+
 console.log("js");
 
 let blogs = [
@@ -8,6 +11,8 @@ let blogs = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0I2o_zW1LYPNmcn-Nhbxb19ObLb4PcYRLQ&s"
   }
 ];
+
+let editId = null
 
 renderBlogsTable()
 
@@ -35,16 +40,31 @@ document.getElementById("blogForm").addEventListener("submit", function (e) {
   const content = document.getElementById("blogContent").value;
   const image = document.getElementById("blogImage").value;
 
-  const newBlog = {
-    id: uuidv4(),
-    title,
-    content,
-    image,
-  };
+  if(editId === null) {
+      const newBlog = {
+        id: uuidv4(),
+        title,
+        content,
+        image,
+      };
 
-  console.log(newBlog);
+      blogs.push(newBlog);
+  } else {
+    console.log(editId);
+    // najdi go blogot
+    const blog = blogs.find(blog => blog.id === editId)
+    // update so novi vrednosti
+    blog.title = title
+    blog.content = content
+    blog.image = image
+    // disable edit mode
+    disableEditMode()
+    // button style
+    document.getElementById("submitBtn").innerText = "Create Blog"
+    document.getElementById("submitBtn").style.backgroundColor = "#fff"  
 
-  blogs.push(newBlog);
+  }
+
   // update local storage
   clearForm()
   renderBlogsTable();
@@ -54,6 +74,13 @@ function clearForm() {
   document.getElementById("blogTitle").value = "";
   document.getElementById("blogContent").value = "";
   document.getElementById("blogImage").value = "";
+}
+
+function disableEditMode() {
+    editId = null
+    document.getElementById("submitBtn").innerText = "Create Blog"
+    document.getElementById("submitBtn").style.backgroundColor = "#fff"  
+
 }
 
 function renderBlogsTable() {
@@ -78,70 +105,28 @@ function renderBlogsTable() {
   });
 }
 
-// function renderBlogsTable() {
-//   const tableBody = document.getElementById("blogTableBody");
-//   tableBody.innerHTML = "";
+function editBlog(id) {
+    console.log(id);
 
-//   blogs.forEach((blog) => {
-//     const tr = document.createElement("tr");
+    blog = blogs.find(blog => blog.id === id)
+    console.log(blog);
+    
+    editId = id;
 
-//     const idCell = document.createElement("td");
-//     idCell.innerText = blog.id;
-
-//     const titleCell = document.createElement("td");
-//     titleCell.innerText = blog.title;
-
-//     const contentCell = document.createElement("td");
-//     contentCell.innerText = blog.content;
-
-//     const imageCell = document.createElement("td");
-//     const image = document.createElement("img");
-//     image.src = blog.image;
-//     image.classList.add("blogImageCell");
-
-//     imageCell.innerText = blog.image;
-//     imageCell.appendChild(image);
-
-//     const actionsCell = document.createElement("td");
-
-//     const editButton = document.createElement("button");
-//     editButton.innerText = "Edit";
-//     const deleteButton = document.createElement("button");
-//     deleteButton.innerText = "Delete";
-
-//     deleteButton.addEventListener("click", () => {
-//       blogs = blogs.filter((x) => x.id !== blog.id);
-
-//       // update local storage
-//       renderBlogsTable();
-//     });
-
-//     actionsCell.appendChild(editButton);
-//     actionsCell.appendChild(deleteButton);
-
-//     tr.appendChild(idCell);
-//     tr.appendChild(titleCell);
-//     tr.appendChild(contentCell);
-//     tr.appendChild(imageCell);
-//     tr.appendChild(actionsCell);
-
-//     tableBody.appendChild(tr);
-//   });
-// }
+    document.getElementById("blogTitle").value = blog.title;
+    document.getElementById("blogContent").value = blog.content;
+    document.getElementById("blogImage").value = blog.image;
+    document.getElementById("submitBtn").innerText = "Update Blog"
+    document.getElementById("submitBtn").style.backgroundColor = "#1de402"
+    
+}
 
 function deleteBlog(id) {
   blogs = blogs.filter((blog) => blog.id !== id);
   console.log("delete with id: ", id);
+  if(editId === id) {
+    disableEditMode()
+  }
   // update local storage
   renderBlogsTable();
 }
-
-// public api
-// fetch list of objects with at least 5-6 properties excluding id
-// display in table
-// create add form to add to this list
-// actions, edit, delete (dodajte uste nesto)
-
-// fetch data store locally
-// localstorage for persistence
-// css
