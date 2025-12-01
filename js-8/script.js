@@ -124,6 +124,10 @@ function editBlog(id) {
   document.getElementById("submitBtn").style.backgroundColor = "#1de402";
 }
 
+function enhanceBlog() {
+  fetch({method: "POST"}, "url-open-ai")
+}
+
 function deleteBlog(id) {
   blogs = blogs.filter((blog) => blog.id !== id);
   console.log("delete with id: ", id);
@@ -144,7 +148,7 @@ function deleteBlog(id) {
 
 // public api za show/movies/books etc..
 // 
-// pages
+// Pages
 // shows
 // show/${id}
 // show/episodes
