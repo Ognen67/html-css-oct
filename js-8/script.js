@@ -150,7 +150,7 @@ function deleteBlog(id) {
 // 
 // Pages
 // shows
-// show/${id}
+// show/${id} show?id=${id}
 // show/episodes
 // show/cast
 // search/filter

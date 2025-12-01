@@ -25,7 +25,18 @@ function renderShows() {
                     <h3>${show.rating.average}</h3>
                 </div>
                 <h2>${show.name}</h2>
+                <a href='show.html?id=${show.id}'>View Show</a>
            </div>
         `;
   });
+}
+
+
+function filterShows() {
+    const query = document.getElementById('search-show').value
+
+    console.log(query);
+    shows = shows.filter(show => show.name.includes(query))
+    console.log(shows);
+    renderShows()
 }

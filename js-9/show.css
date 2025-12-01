@@ -1,0 +1,25 @@
+#cast-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cast-member  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cast-member img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    background-size:contain;
+}
+
+
+
+.cast-member h2, 
+.cast-member p{
+    margin: 0;
+}
