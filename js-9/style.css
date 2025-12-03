@@ -27,6 +27,9 @@
     height: 40px;
 }
 
+.fave svg {
+    color: gold;
+}
 
 @media screen and (max-width: 1280px) {
     #shows-container {

@@ -3,7 +3,6 @@ let episodes = [];
 let cast = [];
 
 const params = new URLSearchParams(window.location.search);
-
 const id = params.get("id");
 
 console.log(id);
@@ -24,6 +23,8 @@ function renderShow() {
     `;
 }
 
+// Path parameter - https://api.tvmaze.com/shows/${id}/episodes
+// Query parameter - https://api.tvmaze.com/shows?show=${id}
 fetch(`https://api.tvmaze.com/shows/${id}/episodes`)
   .then((res) => res.json())
   .then((res) => {
